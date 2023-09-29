@@ -4,12 +4,12 @@
 }
 .navbar-inner {
   font-family: "Muli";
-  color: #4c4e4e;
+  color: #2f3a3a;
 }
 
 .navbar-wrapper .navbar-inner img {
-  height: 80px;
-  width: 195px;
+  height: 60px;
+  width: 140px;
 }
 
 .navbar-inner ul li a {
@@ -29,7 +29,7 @@
 
 .navbar-innerRight a {
   font-size: 15px;
-  background: #11131D;
+  background: #33323D;
   color: #ffffff;
   font-family: "Muli";
   transition: 0.5s;

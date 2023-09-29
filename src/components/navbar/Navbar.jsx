@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <div className={`bg-[#FFFFFF] navbar ${isSticky ? 'sticky z-[2] top-0 bg-[#FFFFFF] shadow-md text-dark' : ''} ${sidebarOpen ? 'sidebar-open' : ''}`}>
-      <div id='Grid' className='p-8'>
+      <div id='Grid' className='px-8 py-4'>
         <div className='navbar-wrapper z-[2] items-center flex justify-between items-center'>
           <div className="navbar-inner w-3/12">
             <picture>
@@ -51,7 +51,7 @@ const Navbar = () => {
                 <>
                   <div className="sidebar-logo mb-5 pt-10 flex justify-between items-center px-5">
                     <picture>
-                      <img src="../../assets/logo1.png" alt="logo" />
+                      <img src="../../assets/new.png" alt="logo" />
                     </picture>
                     <div className="close-button" onClick={toggleSidebar}>
                       <i><RxCross2 /></i>
@@ -79,12 +79,12 @@ const Navbar = () => {
                     <i className='ml-3 flex items-center pb-4 font-medium'><BiUser /> <p>Wishlist</p> </i>
                     <i className='ml-3 flex items-center pb-4 font-medium'><PiShoppingCartDuotone /><p>Shopping Cart</p></i>
                     <hr className='my-4' />
-                   <div className='flex items-center sidebar-social my-10'>
-                   <i className='p-3 mr-4'><FaFacebookF /></i>
-                    <i className='p-3 mr-4'><FaTwitter /></i>
-                    <i className=' p-3 mr-4'><BiLogoLinkedinSquare /></i>
-                    <i className='p-3 mr-4'><AiFillInstagram /></i>
-                   </div>
+                    <div className='flex items-center sidebar-social my-10'>
+                      <i className='p-3 mr-4'><FaFacebookF /></i>
+                      <i className='p-3 mr-4'><FaTwitter /></i>
+                      <i className=' p-3 mr-4'><BiLogoLinkedinSquare /></i>
+                      <i className='p-3 mr-4'><AiFillInstagram /></i>
+                    </div>
                   </div>
                 </div>
               )}
