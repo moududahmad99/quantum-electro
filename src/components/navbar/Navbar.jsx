@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className='navbar-wrapper z-[2] items-center flex justify-between items-center'>
           <div className="navbar-inner w-3/12">
             <picture>
-              <img src="./assets/new.png" alt="logo" />
+              <img src="./assets/logo.png" alt="logo" />
             </picture>
           </div>
           <div className="navbar-inner flex justify-center w-5/12">
@@ -50,7 +50,7 @@ const Navbar = () => {
                 <>
                   <div className="sidebar-logo mb-5 pt-10 flex justify-between items-center px-5">
                     <picture>
-                      <img src="../../assets/new.png" alt="logo" />
+                      <img src="../../assets/logo.png" alt="logo" />
                     </picture>
                     <div className="close-button" onClick={toggleSidebar}>
                       <i><RxCross2 /></i>
