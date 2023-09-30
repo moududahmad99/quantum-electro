@@ -1,0 +1,139 @@
+#shopOffer .shopOffer-inner {
+  font-family: "Muli" !important;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+}
+
+#shopOffer .shopOffer-inner:hover {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+  background-color: rgb(255, 255, 255);
+}
+
+#shopOffer .shopOffer-inner h3 {
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+
+#shopOffer .shopOffer-inner:hover h3 {
+  color: rgb(82, 90, 128);
+}
+
+#Grid {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+#shopOffer .shopOffer-inner i svg {
+  font-size: 45px;
+  opacity: 0;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#shopOffer .shopOffer-inner:hover i svg {
+  opacity: 1;
+}
+
+#shopImage {
+  font-family: "Muli";
+}
+
+#shopImage .shopImage-inner1 {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../../../public/assets/shopCard1.jpg") center/cover no-repeat;
+  height: 258px;
+  position: relative;
+}
+
+#shopImage .shopImage-inner2 {
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("../../../public/assets/shopCard2.jpg") center/cover no-repeat;
+  height: 258px;
+  position: relative;
+}
+
+.shopImage-text {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -40%);
+  -webkit-transform: translate(-50%, -40%);
+  -moz-transform: translate(-50%, -40%);
+  -ms-transform: translate(-50%, -40%);
+  -o-transform: translate(-50%, -40%);
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  #shopOffer {
+    display: block;
+  }  
+  #shopOffer .shopOffer-inner {
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 990.98px) {
+  #shopOffer {
+    display: block;
+  }  
+
+  #shopOffer .shopOffer-inner {
+    margin-bottom: 20px;
+  }
+
+  #shopImage {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  #shopImage .shopImage-inner1,
+  #shopImage .shopImage-inner2 {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+  #shopOffer {
+    display: block;
+    width: 100%;
+  }
+
+  #shopOffer .shopOffer-Card {
+    display: block;
+    width: 100%;
+  }
+
+  #shopOffer .shopOffer-inner {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #shopImage {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #shopImage .shopImage-inner1,
+  #shopImage .shopImage-inner2 {
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  #shopImage .shopImage-inner1 h3,
+  #shopImage .shopImage-inner2 h3 {
+    font-size: 38px;
+  }
+}

@@ -25,6 +25,10 @@ const Banner = () => {
 
   const [isComponentMounted1, setIsComponentMounted1] = useState(false);
 
+  const [isVisibleSlider1, setIsVisibleSlider1] = useState(false);
+  const [isVisibleSlider2, setIsVisibleSlider2] = useState(false);
+
+
   useEffect(() => {
     setIsComponentMounted1(true);
   }, []);
@@ -34,9 +38,6 @@ const Banner = () => {
   useEffect(() => {
     setIsComponentMounted2(true);
   }, []);
-
-  const [isVisibleSlider1, setIsVisibleSlider1] = useState(false);
-  const [isVisibleSlider2, setIsVisibleSlider2] = useState(false);
 
   const controlsH6slide1 = useAnimation();
   const controlsH5slide1 = useAnimation();
@@ -49,7 +50,6 @@ const Banner = () => {
   const controlsBtn = useAnimation();
 
   const onAnimationStart = () => {
-
     if (isComponentMounted2) {
       controlsH6.start({
         opacity: 1,
@@ -125,7 +125,6 @@ const Banner = () => {
     setIsVisibleSlider2(false);
   };
 
-
   const onVisibilityChangeSlider2 = (visible) => {
     if (visible && !isVisibleSlider2) {
       setIsVisibleSlider2(true);
@@ -149,6 +148,7 @@ const Banner = () => {
 
   const isLargeDevice = window.innerWidth <= 991;
 
+
   return (
     <div className="banner-wrapper">
       <Slider {...settings}>
@@ -169,7 +169,6 @@ const Banner = () => {
             </div>
           </div>
         ) : (
-
           <div className="carousel-item1 w-1/2">
             <div className="p-8" id="Grid">
               <div className='flex justify-between items-center bannerHeightResponsive'>
@@ -179,6 +178,7 @@ const Banner = () => {
                       initial={{ opacity: 0, y: -60 }}
                       animate={controlsH6slide1}
                       className='font-semibold'
+                      variants={controlsH6slide1}
                     >
                       Seasonal Savings
                     </motion.h6>

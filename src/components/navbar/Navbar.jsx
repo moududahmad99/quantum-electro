@@ -16,12 +16,11 @@ const Navbar = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
-
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 600) {
+      if (window.scrollY >= 740) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
