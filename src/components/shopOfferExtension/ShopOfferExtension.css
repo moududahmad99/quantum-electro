@@ -1,0 +1,82 @@
+
+
+#Grid {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+ 
+#shopImage {
+  font-family: "Muli";
+}
+
+#shopImage .shopImage-inner1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../../public/assets/shopCard1Extension.jpg") center/cover no-repeat;
+  height: 258px;
+  position: relative;
+}
+
+#shopImage .shopImage-inner2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("../../../public/assets/shopCard2Extension.jpg") center/cover no-repeat;
+  height: 258px;
+  position: relative;
+}
+
+.shopImage-text {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -40%);
+  -webkit-transform: translate(-50%, -40%);
+  -moz-transform: translate(-50%, -40%);
+  -ms-transform: translate(-50%, -40%);
+  -o-transform: translate(-50%, -40%);
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  #shopOffer {
+    display: block;
+  }
+  #shopOffer .shopOffer-inner {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990.98px) {
+ 
+
+ 
+  #shopImage {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  #shopImage .shopImage-inner1,
+  #shopImage .shopImage-inner2 {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+ 
+  #shopImage {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #shopImage .shopImage-inner1,
+  #shopImage .shopImage-inner2 {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  #shopImage .shopImage-inner1 h3,
+  #shopImage .shopImage-inner2 h3 {
+    font-size: 38px;
+  }
+}

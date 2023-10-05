@@ -1,0 +1,54 @@
+#Grid {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+#topFeatured {
+  font-family: "Muli";
+}
+
+#topFeatured .topFeatLeft {
+  position: relative;
+  width: 300px;
+}
+
+#topFeatured .slick-dots {
+  position: absolute;
+  width: 160px;
+  left: -210px;
+  top: 50%;
+}
+
+#topFeatured .slick-dots .slick-active {
+  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+
+/* @media (min-width: 1200px) and (max-width: 1400px) {
+  
+} */
+
+@media (min-width: 320px) and (max-width: 1200px) {
+  #topFeatured .slick-dots {
+    display: none !important;
+  }
+
+  #topFeatured {
+    flex-wrap: wrap !important;
+  }
+
+  #topFeatured .topFeatLeft {
+    position: relative;
+    width: 400px !important;
+    display: block;
+  }
+  
+}

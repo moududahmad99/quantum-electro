@@ -1,0 +1,112 @@
+#Grid {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+
+/* .newArrival-tabs  */
+
+
+/* Product Card */
+
+#newArrival {
+  font-family: "Muli";
+}
+
+#newArrival .newArrival-card {
+  position: relative;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  border: thin solid #3a575c11;
+}
+
+#newArrival .newArrival-card img {
+  height: 230px;
+  width: 100%;
+}
+
+.new-arrival {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 4px 20px;
+  background-color: #212122 !important;
+  color: #ffffff;
+  -webkit-border-radius: 10px 0 10px 0;
+  border-radius: 10px 0 10px 0;
+  -moz-border-radius: 10px 0 10px 0;
+  -ms-border-radius: 10px 0 10px 0;
+  -o-border-radius: 10px 0 10px 0;
+  font-size: 14px;
+}
+
+#newArrival .newArrival-desc h4 {
+  font-family: "Muli";
+  cursor: pointer;
+}
+
+#newArrival .newArrival-desc h3 span {
+  text-decoration: line-through;
+}
+
+#newArrival .newArrival-desc i {
+  color: #ffbf21;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#newArrival .newArrival-desc i:hover,
+#newArrival .newArrival-desc h4:hover,
+#newArrival .newArrival-desc h3 {
+  color: #afbaca;
+}
+
+#newArrival .newArrival-card:hover {
+  box-shadow: 0px 10px 48px 10px rgba(185, 185, 185, 0.4);
+}
+
+#newArrival .newArrival-card:hover .newArrival-hoverIcons {
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.newArrival-hoverIcons {
+  display: none;
+}
+
+#newArrival .newArrival-hoverIcons li {
+  background-color: #ffffff;
+  color: #071c1f;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#newArrival .newArrival-hoverIcons li:hover {
+  color: #d4d4d4;
+  background-color: #212122;
+}
+
+.react-tabs__tab--selected,
+.react-tabs__tab-list {
+  border: none !important;
+}
+
+.react-tabs__tab--selected h1 {
+  background: #071c1fb7 !important;
+}
