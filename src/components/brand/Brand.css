@@ -1,0 +1,9 @@
+#Grid {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+#brand .brand-inner img {
+  height: 100px;
+  width: 190px;
+}

@@ -13,14 +13,14 @@
 #shopImage .shopImage-inner1 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../../../public/assets/shopCard1Extension.jpg") center/cover no-repeat;
-  height: 258px;
+  height: 288px;
   position: relative;
 }
 
 #shopImage .shopImage-inner2 {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
     url("../../../public/assets/shopCard2Extension.jpg") center/cover no-repeat;
-  height: 258px;
+  height: 288px;
   position: relative;
 }
 

@@ -107,7 +107,8 @@ const Banner = () => {
     controlsBtnslide1.start({ opacity: 0, y: -60 });
     setIsVisibleSlider1(false);
   }
-
+  
+  // eslint-disable-next-line
   const onVisibilityChangeSlider1 = (visible) => {
     if (visible && !isVisibleSlider1) {
       setIsVisibleSlider1(true);
@@ -137,7 +138,7 @@ const Banner = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 0,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
@@ -173,47 +174,30 @@ const Banner = () => {
             <div className="p-8" id="Grid">
               <div className='flex justify-between items-center bannerHeightResponsive'>
                 <div className="text-content">
-                  <VisibilitySensor onChange={onVisibilityChangeSlider1} partialVisibility>
-                    <motion.h6
-                      initial={{ opacity: 0, y: -60 }}
-                      animate={controlsH6slide1}
-                      className='font-semibold'
-                      variants={controlsH6slide1}
-                    >
-                      Seasonal Savings
-                    </motion.h6>
-                  </VisibilitySensor>
 
-                  <VisibilitySensor onChange={onVisibilityChangeSlider1} partialVisibility>
-                    <motion.h1
-                      initial={{ opacity: 0, x: 160 }}
-                      animate={controlsH1slide1}
-                      className='text-6xl my-4	font-bold pr-4'
-                    >
-                      Innovative Eco-Tech Choices
-                    </motion.h1>
-                  </VisibilitySensor>
+                  <motion.h6
+                    initial={{ y: -80, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1.5, delay: 1 }}
+                  >
+                    Seasonal Savings
+                  </motion.h6>
 
-                  <VisibilitySensor onChange={onVisibilityChangeSlider1} partialVisibility>
-                    <motion.h5
-                      initial={{ opacity: 0, x: -160 }}
-                      animate={controlsH5slide1}
-                      className='text-2xl my-4	font-semibold pr-4'
-                    >
-                      Wide Range Start from <span className='text-5xl'>79$</span>
-                    </motion.h5>
-                  </VisibilitySensor>
+                  <motion.h1 className='text-6xl  my-4'
+                    initial={{ x: -170, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 1.5, delay: 1 }}>Innovative Eco-Tech Choices</motion.h1>
+                  <motion.h5 className='font-white text-2xl my-8'
+                    initial={{ x: 140, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 1.5, delay: 1 }}>Wide Range Start from <span className='text-3xl'>79$</span></motion.h5>
 
-                  <VisibilitySensor onChange={onVisibilityChangeSlider1} partialVisibility>
-                    <motion.div
-                      initial={{ opacity: 0, y: -80 }}
-                      animate={controlsBtnslide1}
-                      className='mt-14'
-                    >
-                      <a href="##" className='uppercase font-semibold'>View Gadgets</a>
-                    </motion.div>
-                  </VisibilitySensor>
-
+                  <motion.div className='uppercase my-5 font-semibold'
+                    initial={{ y: 80, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1.5, delay: 1 }}>
+                    <a href="##">View Gadgets</a>
+                  </motion.div>
                 </div>
               </div>
             </div>
@@ -243,7 +227,7 @@ const Banner = () => {
 
                   <VisibilitySensor onChange={onVisibilityChangeSlider2} partialVisibility>
                     <motion.h6
-                      initial={{ opacity: 0, y: -60, delay: 1.2 }}
+                      initial={{ opacity: 0, y: -60 }}
                       animate={controlsH6}
                       className='font-semibold'
                     >
@@ -251,36 +235,36 @@ const Banner = () => {
                     </motion.h6>
                   </VisibilitySensor>
 
-                  <VisibilitySensor onChange={onVisibilityChangeSlider2} partialVisibility>
-                    <motion.h1
-                      initial={{ opacity: 0, x: 160 }}
-                      animate={controlsH1}
-                      className='text-6xl my-4	font-bold pr-4'
-                    >
-                      Ecological Elegance Solutions
-                    </motion.h1>
-                  </VisibilitySensor>
+                  {/* <VisibilitySensor onChange={onVisibilityChangeSlider2} partialVisibility> */}
+                  <motion.h1
+                    initial={{ opacity: 0, x: 160 }}
+                    animate={controlsH1}
+                    className='text-6xl my-4	font-bold pr-4'
+                  >
+                    Ecological Elegance Solutions
+                  </motion.h1>
+                  {/* </VisibilitySensor> */}
 
-                  <VisibilitySensor onChange={onVisibilityChangeSlider2} partialVisibility>
-                    <motion.h5
-                      initial={{ opacity: 0, x: -80 }}
-                      animate={controlsH5}
-                      className='text-2xl my-4	font-semibold pr-4'
-                    >
-                      Wide Range Start from <span className='text-5xl'>15$</span>
+                  {/* <VisibilitySensor onChange={onVisibilityChangeSlider2} partialVisibility> */}
+                  <motion.h5
+                    initial={{ opacity: 0, x: -80 }}
+                    animate={controlsH5}
+                    className='text-2xl my-4	font-semibold pr-4'
+                  >
+                    Wide Range Start from <span className='text-5xl'>15$</span>
 
-                    </motion.h5>
-                  </VisibilitySensor>
+                  </motion.h5>
+                  {/* </VisibilitySensor> */}
 
-                  <VisibilitySensor onChange={onVisibilityChangeSlider2} partialVisibility>
-                    <motion.div
-                      initial={{ opacity: 0, y: -80 }}
-                      animate={controlsBtn}
-                      className='mt-14'
-                    >
-                      <a href="##" className='uppercase font-semibold'>Explore Products</a>
-                    </motion.div>
-                  </VisibilitySensor>
+                  {/* <VisibilitySensor onChange={onVisibilityChangeSlider2} partialVisibility> */}
+                  <motion.div
+                    initial={{ opacity: 0, y: -80 }}
+                    animate={controlsBtn}
+                    className='mt-14'
+                  >
+                    <a href="##" className='uppercase font-semibold'>Explore Products</a>
+                  </motion.div>
+                  {/* </VisibilitySensor> */}
                 </div>
               </div>
             </div>

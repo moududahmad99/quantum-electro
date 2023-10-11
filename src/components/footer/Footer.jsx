@@ -42,7 +42,7 @@ const Footer = () => {
 						<p className='my-2'>Get a $20 Coupon for Your First Purchase and Enjoy Free Delivery</p>
 					</div>
 					<div className='flex items-center'>
-						<input className='px-10 bg-[#132043] outline-none text-white py-3' type="email" required />
+						<input placeholder='Enter Your Email Address' className='px-10 bg-[#132043] outline-none text-white py-3' type="email" required />
 						<i className='p-4 cursor-pointer border-l bg-[#132043] text-white'><FiSend /></i>
 					</div>
 				</div>

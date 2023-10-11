@@ -55,11 +55,11 @@ const FeaturedItems = () => {
         <div id="Grid" className='p-8'>
           <div id='topFeatured' className='my-20'>
             <div className='grid grid-cols-4 gap-4 flex flex-nowrap sm:flex-wrap'>
-              <div className='featItems'>
+              <div className='featItems hidden md:block '>
                 <picture>
                   <img src="/assets/Headphone.jpg" alt="img" />
                 </picture>
-                <div className='featItems-inner bg-[#232D3F70] py-2 text-center'>
+                <div className='hidden md:block featItems-inner bg-[#232D3F70] py-2 text-center'>
                   <h5 className='text-white font-normal text-lg'>Headphones</h5>
                   <h2 className='text-white font-medium text-2xl'>Flate Discount</h2>
                 </div>
@@ -257,11 +257,11 @@ const FeaturedItems = () => {
           </div>
           <div id='topFeatured' className='my-20'>
             <div className='grid grid-cols-4 gap-4 flex flex-nowrap sm:flex-wrap'>
-              <div className='featItems'>
+              <div className='featItems hidden md:block '>
                 <picture>
                   <img src="/assets/Phone.jpg" alt="img" />
                 </picture>
-                <div className='featItems-inner bg-[#232D3F70] py-2 text-center'>
+                <div className='hidden md:block  featItems-inner bg-[#232D3F70] py-2 text-center'>
                   <h5 className='text-white font-normal text-lg'>Phones</h5>
                   <h2 className='text-white font-medium text-2xl'>Flate Discount</h2>
                 </div>

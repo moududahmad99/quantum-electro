@@ -226,10 +226,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  
-
   .footer-main {
-    /* padding-top: 240px; */
     padding-top: 40px;
   }
 

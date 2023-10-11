@@ -204,7 +204,7 @@ const NewArrival = () => {
           <Tabs>
             <TabList>
               <div className="newArrival-tabs px-6 pr-8 flex flex-wrap justify-between items-center">
-              <div className='mt-5'>
+              <div className='mt-5 '>
                 <Tab>
                   <h1 className='bg-[#001524] border rounded text-white px-5 py-3'>New Arrival</h1>
                 </Tab>
@@ -259,9 +259,9 @@ const NewArrival = () => {
               </div>
             </TabPanel>
             <TabPanel>
-              <div className='flex'>
+              <div className='flex grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
                   {products2.map((product) => (
-                    <div className="w-3/12" key={product.id}>
+                    <div key={product.id}>
                       <div className="newArrival-card mx-4 my-5 pb-5">
                         <picture>
                           <img src={product.imageSrc} alt="Product" />

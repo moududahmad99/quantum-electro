@@ -8,23 +8,23 @@ import ShopOffer from '../../components/shopOffer/ShopOffer'
 import ShopOfferExtension from '../../components/shopOfferExtension/ShopOfferExtension'
 import FeaturedCard from '../../components/featuredCard/FeaturedCard'
 import FeaturedItems from '../../components/featuredItems/FeaturedItems'
-import Spance from '../../components/spance/spance'
+import Brand from '../../components/brand/Brand'
 import Footer from '../../components/footer/Footer'
 
 const Home = () => {
   return (
     <div>
-         <TopBar />
-        <Navbar />
-        <Banner />
-        <ShopOffer />
-        <NewArrival />
-        <TopFeatured />
-        <ShopOfferExtension />
-        <FeaturedCard />
-        <FeaturedItems />
-        <Spance />
-        <Footer />
+      <TopBar />
+      <Navbar />
+      <Banner />
+      <ShopOffer />
+      <NewArrival />
+      <TopFeatured />
+      <ShopOfferExtension />
+      <FeaturedCard />
+      <FeaturedItems />
+      <Brand />
+      <Footer />
     </div>
   )
 }
