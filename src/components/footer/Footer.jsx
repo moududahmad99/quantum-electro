@@ -4,6 +4,8 @@ import './Footer.css'
 import { TfiLocationPin } from 'react-icons/tfi'
 import { LuPhoneCall } from 'react-icons/lu'
 import { MdOutlineMail } from 'react-icons/md'
+import { HiSpeakerphone } from 'react-icons/hi'
+import { FiSend } from 'react-icons/fi'
 
 import { FaFacebookF, FaTwitter, FaInstagram, FaLongArrowAltUp } from 'react-icons/fa';
 import { BsDribbble, BsSendFill } from 'react-icons/bs'
@@ -32,6 +34,19 @@ const Footer = () => {
 
 	return (
 		<>
+			<div className='bg-[#CD330140]'>
+				<div id="Grid" className='footer-topSubscribe p-8 flex justify-between items-center flex-wrap'>
+					<div className='flex flex-wrap text-gray items-center'>
+						<i className='pr-2 text-3xl'><HiSpeakerphone /> </i>
+						<h5 className='font-bold my-2  pr-8 '>Join Us and Subscribe!</h5>
+						<p className='my-2'>Get a $20 Coupon for Your First Purchase and Enjoy Free Delivery</p>
+					</div>
+					<div className='flex items-center'>
+						<input className='px-10 bg-[#132043] outline-none text-white py-3' type="email" required />
+						<i className='p-4 cursor-pointer border-l bg-[#132043] text-white'><FiSend /></i>
+					</div>
+				</div>
+			</div>
 			<div className="bg-[#F1EFEF]">
 				<div id="Grid" className='pr-8'>
 					<div className="footer-main flex pt-14">
@@ -129,4 +144,4 @@ const Footer = () => {
 	)
 }
 
-export default Footer
+export default Footer;

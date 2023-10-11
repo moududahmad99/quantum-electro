@@ -1,0 +1,45 @@
+#Grid {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+#featuredCard .featuredCardTab {
+  font-family: 'Muli';
+}
+
+#featuredCard .featuredCard-wrapper {
+  font-family: 'Muli';
+}
+
+#featuredCard .featuredCard-wrapper img {
+  height: auto;
+  width: 174px;
+}
+
+#featuredCard .featuredCard-wrapper i { 
+  color: #dbada5dc;
+}
+
+.featuredCard-wrapper--right{
+  width: 220px !important;
+  /* background: #ececec; */
+}
+
+.featuredCard-SeasonSale {
+  position: relative;
+}
+
+.featuredCard-SeasonSale img {
+  opacity: 0.7;
+  min-height: 160px;
+}
+
+.SeasonSale-text {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+
+.SeasonSale-text h2, .SeasonSale-text h3 {
+  color: #0a2850;
+}

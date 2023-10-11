@@ -1,0 +1,101 @@
+#Grid {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.products-card {
+  position: relative;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  border: thin solid #3a575c11;
+}
+
+.featItems {
+  position: relative;
+}
+
+.featItems-inner {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  width: 200px;
+  font-family: 'Muli';
+}
+
+.new-arrival {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 4px 20px;
+  background-color: #4a6079b0 !important;
+  color: #ffffff;
+  -webkit-border-radius: 10px 0 10px 0;
+  border-radius: 10px 0 10px 0;
+  -moz-border-radius: 10px 0 10px 0;
+  -ms-border-radius: 10px 0 10px 0;
+  -o-border-radius: 10px 0 10px 0;
+  font-size: 14px;
+}
+
+.products-desc h4 {
+  font-family: "Muli";
+  cursor: pointer;
+}
+
+.products-desc h3 span {
+  text-decoration: line-through;
+}
+
+.products-desc i {
+  color: #ffbf21;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.products-desc i:hover,
+.products-desc h4:hover,
+.products-desc h3 {
+  color: #272829;
+}
+
+.products-hoverIcons {
+  display: none;
+}
+ 
+.products-card:hover .products-hoverIcons {
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.products-hoverIcons li {
+  background-color: #ffffff;
+  color: #071c1f;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.products-hoverIcons li:hover {
+  color: #ffffff;
+  background-color: #505152;
+}

@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.footer-topSubscribe {
+  font-family: 'Muli';
+}
+
 .footer-main i {
   color: #1221239a;
 }
